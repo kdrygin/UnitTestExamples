@@ -2,9 +2,16 @@
 
 namespace Synonyms
 {
+    using SynonymsDict = Dictionary<string, HashSet<string>>;
+
     public class Synonyms
     {
-        private Dictionary<string, HashSet<string>> synonyms;
+        private SynonymsDict synonyms;
+
+        public SynonymsDict Dict
+        {
+            get { return synonyms; }
+        }
 
         public Synonyms()
         {
